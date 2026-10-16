@@ -74,10 +74,7 @@ export function CompatibilitySection({
                       strokeWidth="1"
                       strokeLinejoin="round"
                     />
-                    <path
-                      d="M16 10c0 3-2 4-2 5a2 2 0 0 0 4 0c0-2-1-3-2-5Z"
-                      fill="#FFF2CC"
-                    />
+                    <path d="M16 10c0 3-2 4-2 5a2 2 0 0 0 4 0c0-2-1-3-2-5Z" fill="#FFF2CC" />
 
                     {/* Brass bowl */}
                     <path
@@ -103,12 +100,7 @@ export function CompatibilitySection({
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
-                    <path
-                      d="M10 37h12"
-                      stroke="#D4AF62"
-                      strokeWidth="1"
-                      strokeLinecap="round"
-                    />
+                    <path d="M10 37h12" stroke="#D4AF62" strokeWidth="1" strokeLinecap="round" />
                   </svg>
                 </span>
                 <div>

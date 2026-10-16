@@ -14,11 +14,7 @@ import {
 
 import type { BookingController } from '../hooks/use-booking';
 
-export function BookingSummaryDialog({
-  booking,
-}: {
-  booking: BookingController;
-}) {
+export function BookingSummaryDialog({ booking }: { booking: BookingController }) {
   const {
     service,
     mode,
@@ -49,9 +45,7 @@ export function BookingSummaryDialog({
       setCopied(true);
     } catch {
       setCopied(false);
-      setCopyError(
-        'Copying is unavailable in this browser. Use Open WhatsApp to continue.',
-      );
+      setCopyError('Copying is unavailable in this browser. Use Open WhatsApp to continue.');
     }
   }
 
@@ -71,9 +65,8 @@ export function BookingSummaryDialog({
           <DialogTitle>Your consultation request is ready</DialogTitle>
 
           <DialogDescription>
-            Open WhatsApp below, then tap Send to share your request.
-            Nothing has been sent yet. Your appointment is confirmed
-            only after the astrologer replies.
+            Open WhatsApp below, then tap Send to share your request. Nothing has been sent yet.
+            Your appointment is confirmed only after the astrologer replies.
           </DialogDescription>
         </DialogHeader>
 
@@ -93,22 +86,13 @@ export function BookingSummaryDialog({
         </dl>
 
         {result && (
-          <a
-            href={result.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button full"
-          >
+          <a href={result.url} target="_blank" rel="noopener noreferrer" className="button full">
             <MessageCircle size={18} />
             Open WhatsApp
           </a>
         )}
 
-        <Button
-          type="button"
-          className="button full"
-          onClick={copyRequest}
-        >
+        <Button type="button" className="button full" onClick={copyRequest}>
           <Copy size={16} />
           {copied ? 'Copied to clipboard' : 'Copy request details'}
         </Button>
@@ -119,11 +103,7 @@ export function BookingSummaryDialog({
           </p>
         )}
 
-        <button
-          type="button"
-          className="text-link centered"
-          onClick={closeDialog}
-        >
+        <button type="button" className="text-link centered" onClick={closeDialog}>
           <RotateCcw size={14} />
           Back to request
         </button>

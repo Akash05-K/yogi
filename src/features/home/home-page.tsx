@@ -6,7 +6,7 @@ import { BookingSection } from '@/features/booking/components/booking-section';
 import { BookingSummaryDialog } from '@/features/booking/components/booking-summary-dialog';
 import { useBooking } from '@/features/booking/hooks/use-booking';
 import { ConsultationGuide } from '@/features/consultation-guide/components/consultation-guide';
-import { useServiceStatus } from '@/hooks/use-service-status';
+import { useServiceStatus } from '@/features/consultation-guide/hooks/use-service-status';
 import { MotionConfig } from 'motion/react';
 import { ApproachSection } from './components/approach-section';
 import { ClosingSection } from './components/closing-section';

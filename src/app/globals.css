@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=DM+Serif+Display:ital@0;1&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
-@import '../../vendor/shadcn-tailwind-4.13.0.css';
+@import '../components/ui/vendor/shadcn-tailwind-4.13.0.css';
 
 :root {
   --background: #faf7f0;
@@ -183,7 +183,7 @@ section[id] {
   margin-bottom: 21px;
 }
 
-.eyebrow>span {
+.eyebrow > span {
   width: 6px;
   height: 6px;
   background: var(--gold);
@@ -259,7 +259,7 @@ section[id] {
   letter-spacing: 0.2px;
 }
 
-.topbar>span:last-child {
+.topbar > span:last-child {
   display: flex;
   align-items: center;
   gap: 7px;
@@ -304,7 +304,7 @@ header {
   height: 46px;
 }
 
-.brand-symbol>span {
+.brand-symbol > span {
   position: absolute;
   font-size: 20px;
   background: var(--background);
@@ -381,7 +381,7 @@ nav a:hover {
   margin-bottom: 25px;
 }
 
-.hero-copy>p {
+.hero-copy > p {
   font-size: 14px;
   max-width: 460px;
   line-height: 1.9;
@@ -473,7 +473,7 @@ nav a:hover {
   font-size: 12px;
 }
 
-.floating-note>span {
+.floating-note > span {
   color: var(--gold);
   background: var(--background);
   padding: 12px;
@@ -547,7 +547,7 @@ nav a:hover {
   margin-bottom: 39px;
 }
 
-.section-heading>p {
+.section-heading > p {
   max-width: 325px;
   font-size: 13px;
   padding-bottom: 3px;
@@ -573,7 +573,7 @@ nav a:hover {
   background: linear-gradient(transparent 30%, #20120dd9);
 }
 
-.services-photo>div {
+.services-photo > div {
   position: absolute;
   bottom: 30px;
   left: 27px;
@@ -628,7 +628,7 @@ nav a:hover {
   height: 28px;
 }
 
-.service-top>span {
+.service-top > span {
   font: italic 19px Georgia;
   color: #c9bda8;
 }
@@ -680,7 +680,7 @@ nav a:hover {
   position: relative;
 }
 
-.marriage-image>img {
+.marriage-image > img {
   border-radius: 160px 8px 8px 8px;
   object-position: 50% 50%;
 }
@@ -713,7 +713,7 @@ nav a:hover {
   font-size: 43px;
 }
 
-.compatibility-copy>p {
+.compatibility-copy > p {
   font-size: 12px;
   margin-top: 22px;
 }
@@ -722,14 +722,14 @@ nav a:hover {
   margin: 24px 0 29px;
 }
 
-.compat-list>div {
+.compat-list > div {
   display: flex;
   gap: 16px;
   padding: 15px 0;
   border-bottom: 1px solid #ded4c7;
 }
 
-.compat-list>div>span {
+.compat-list > div > span {
   font: italic 17px Georgia;
   color: var(--gold);
   padding-top: 2px;
@@ -755,7 +755,7 @@ nav a:hover {
   justify-content: center;
 }
 
-.center-heading>p {
+.center-heading > p {
   font-size: 12px;
   max-width: 420px;
   margin: 20px auto 0;
@@ -775,7 +775,7 @@ nav a:hover {
   background: white;
 }
 
-.approach-card>svg {
+.approach-card > svg {
   color: var(--gold);
   width: 28px;
   height: 28px;
@@ -821,7 +821,7 @@ nav a:hover {
   padding: 0;
 }
 
-.photo-card>img {
+.photo-card > img {
   position: absolute;
   inset: 0;
   object-position: 50% 70%;
@@ -834,7 +834,7 @@ nav a:hover {
   background: linear-gradient(#3c241233, #311c13d9);
 }
 
-.photo-card>div {
+.photo-card > div {
   position: relative;
   padding: 34px 30px;
   z-index: 1;
@@ -891,7 +891,7 @@ nav a:hover {
   padding-bottom: 0;
 }
 
-.step>span {
+.step > span {
   height: 42px;
   width: 42px;
   flex-shrink: 0;
@@ -930,7 +930,7 @@ nav a:hover {
   line-height: 1.1;
 }
 
-.booking-intro>p {
+.booking-intro > p {
   font-size: 14px;
   line-height: 1.85;
   margin-top: 25px;
@@ -969,7 +969,7 @@ nav a:hover {
   filter: brightness(0.6);
 }
 
-.booking-image>span {
+.booking-image > span {
   position: absolute;
   inset: 0;
   display: flex;
@@ -1031,7 +1031,7 @@ nav a:hover {
   margin: 28px 0;
 }
 
-.progress>div {
+.progress > div {
   height: 1px;
   flex: 1;
   background: var(--border);
@@ -1095,7 +1095,7 @@ legend {
   gap: 8px;
 }
 
-legend>span {
+legend > span {
   font-size: 8px;
   color: var(--muted-foreground);
   font-weight: 400;
@@ -1119,13 +1119,13 @@ legend>span {
   text-align: left;
 }
 
-.service-options button>svg {
+.service-options button > svg {
   color: var(--gold);
   flex-shrink: 0;
   stroke-width: 1.4;
 }
 
-.service-options button>span:not(.radio-dot) {
+.service-options button > span:not(.radio-dot) {
   font-size: 10px;
   max-width: 100px;
   line-height: 1.5;
@@ -1370,8 +1370,8 @@ textarea {
   line-height: 1.1;
 }
 
-.faq-grid>div>p,
-.faq-intro>p {
+.faq-grid > div > p,
+.faq-intro > p {
   font-size: 13px;
   max-width: 300px;
   margin-top: 20px;
@@ -1400,7 +1400,7 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-summary>span {
+summary > span {
   display: flex;
   gap: 18px;
   align-items: center;
@@ -1412,17 +1412,17 @@ summary small {
   color: var(--gold);
 }
 
-summary>svg {
+summary > svg {
   flex-shrink: 0;
   color: var(--primary);
   transition: transform 0.25s;
 }
 
-details[open] summary>svg {
+details[open] summary > svg {
   transform: rotate(180deg);
 }
 
-details>p {
+details > p {
   font-size: 11px;
   padding: 0 26px 22px 33px;
 }
@@ -1515,14 +1515,14 @@ details>p {
   gap: 30px;
 }
 
-.footer-top>div {
+.footer-top > div {
   display: flex;
   gap: 26px;
   font-size: 10px;
   color: var(--muted-foreground);
 }
 
-.footer-top>span {
+.footer-top > span {
   font:
     italic 19px 'DM Serif Display',
     Georgia;
@@ -1673,7 +1673,7 @@ details>p {
   margin-bottom: 10px;
 }
 
-.request-dialog dl>div {
+.request-dialog dl > div {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -1851,7 +1851,7 @@ details>p {
     font-size: 51px;
   }
 
-  .hero-copy>p {
+  .hero-copy > p {
     font-size: 12px;
   }
 
@@ -1882,7 +1882,7 @@ details>p {
     font-size: 8px;
   }
 
-  .floating-note>span {
+  .floating-note > span {
     padding: 8px;
   }
 
@@ -1951,7 +1951,7 @@ details>p {
     padding: 0;
   }
 
-  .photo-card>div {
+  .photo-card > div {
     padding: 23px 18px;
   }
 
@@ -1973,7 +1973,7 @@ details>p {
     font-size: 37px;
   }
 
-  .booking-intro>p {
+  .booking-intro > p {
     font-size: 12px;
   }
 
@@ -1989,11 +1989,11 @@ details>p {
     padding: 16px 8px;
   }
 
-  .service-options button>svg {
+  .service-options button > svg {
     width: 18px;
   }
 
-  .service-options button>span:not(.radio-dot) {
+  .service-options button > span:not(.radio-dot) {
     font-size: 9px;
   }
 
@@ -2018,7 +2018,7 @@ details>p {
     width: 13px;
   }
 
-  .footer-top>div {
+  .footer-top > div {
     gap: 15px;
   }
 
@@ -2047,7 +2047,7 @@ details>p {
     padding: 8px 15px;
   }
 
-  .topbar>span:last-child {
+  .topbar > span:last-child {
     display: none;
   }
 
@@ -2123,7 +2123,7 @@ details>p {
     margin-bottom: 19px;
   }
 
-  .hero-copy>p {
+  .hero-copy > p {
     font-size: 12px;
     max-width: 350px;
     line-height: 1.9;
@@ -2236,7 +2236,7 @@ details>p {
     margin-bottom: 27px;
   }
 
-  .section-heading>p {
+  .section-heading > p {
     font-size: 11px;
     max-width: 310px;
     margin-top: 18px;
@@ -2246,7 +2246,7 @@ details>p {
     height: 220px;
   }
 
-  .services-photo>div {
+  .services-photo > div {
     bottom: 22px;
     left: 22px;
   }
@@ -2276,7 +2276,7 @@ details>p {
     height: 25px;
   }
 
-  .service-top>span {
+  .service-top > span {
     font-size: 16px;
   }
 
@@ -2320,7 +2320,7 @@ details>p {
     width: calc(100% - 14px);
   }
 
-  .marriage-image>img {
+  .marriage-image > img {
     border-radius: 110px 7px 7px 7px;
   }
 
@@ -2340,7 +2340,7 @@ details>p {
     font-size: 35px;
   }
 
-  .compatibility-copy>p {
+  .compatibility-copy > p {
     font-size: 11px;
     margin-top: 19px;
   }
@@ -2349,7 +2349,7 @@ details>p {
     margin-block: 18px 24px;
   }
 
-  .compat-list>div {
+  .compat-list > div {
     padding: 13px 0;
   }
 
@@ -2365,7 +2365,7 @@ details>p {
     margin-bottom: 27px;
   }
 
-  .center-heading>p {
+  .center-heading > p {
     font-size: 11px;
     max-width: 300px;
   }
@@ -2410,7 +2410,7 @@ details>p {
     min-height: 245px;
   }
 
-  .photo-card>div {
+  .photo-card > div {
     padding: 25px;
   }
 
@@ -2439,7 +2439,7 @@ details>p {
     padding-block: 22px;
   }
 
-  .step>span {
+  .step > span {
     width: 35px;
     height: 35px;
     font-size: 12px;
@@ -2467,7 +2467,7 @@ details>p {
     font-size: 38px;
   }
 
-  .booking-intro>p {
+  .booking-intro > p {
     margin-top: 19px;
     font-size: 12px;
   }
@@ -2527,11 +2527,11 @@ details>p {
     padding: 17px 10px;
   }
 
-  .service-options button>svg {
+  .service-options button > svg {
     width: 21px;
   }
 
-  .service-options button>span:not(.radio-dot) {
+  .service-options button > span:not(.radio-dot) {
     font-size: 10px;
   }
 
@@ -2596,7 +2596,7 @@ details>p {
     padding-top: 0;
   }
 
-  .faq-grid>div>p {
+  .faq-grid > div > p {
     font-size: 11px;
     max-width: 300px;
     margin-top: 15px;
@@ -2607,11 +2607,11 @@ details>p {
     font-size: 11px;
   }
 
-  summary>span {
+  summary > span {
     gap: 12px;
   }
 
-  details>p {
+  details > p {
     padding-left: 25px;
     font-size: 11px;
   }
@@ -2625,7 +2625,7 @@ details>p {
     letter-spacing: -0.8px;
   }
 
-  .closing>div>svg {
+  .closing > div > svg {
     width: 33px;
     margin-bottom: 20px;
   }
@@ -2645,12 +2645,12 @@ details>p {
     gap: 25px;
   }
 
-  .footer-top>span {
+  .footer-top > span {
     font-size: 17px;
     margin-left: auto;
   }
 
-  .footer-top>div {
+  .footer-top > div {
     order: 3;
     width: 100%;
     gap: 24px;
@@ -2685,7 +2685,7 @@ details>p {
     box-shadow: 0 -3px 20px #30172106;
   }
 
-  .mobile-book>span {
+  .mobile-book > span {
     font-size: 12px;
     font-weight: 550;
   }
@@ -2798,7 +2798,6 @@ details>p {
   }
 }
 
-
 /* Hero zodiac image and rotation */
 .hero-art .hero-orbit {
   position: relative;
@@ -2843,7 +2842,7 @@ details>p {
 }
 
 /* Consultation card icon: 3D hover pop */
-.service-card .service-top>svg {
+.service-card .service-top > svg {
   transform-box: fill-box;
   transform-origin: center;
   transform: perspective(400px) translateY(0) rotateX(0) rotateY(0) scale(1);
@@ -2854,18 +2853,16 @@ details>p {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .service-card:hover .service-top>svg {
-    transform:
-      perspective(400px) translateY(-6px) rotateX(12deg) rotateY(-16deg) scale(1.35);
-    filter:
-      drop-shadow(1px 2px 0 rgb(140 103 45 / 25%)) drop-shadow(0 8px 5px rgb(140 103 45 / 28%));
+  .service-card:hover .service-top > svg {
+    transform: perspective(400px) translateY(-6px) rotateX(12deg) rotateY(-16deg) scale(1.35);
+    filter: drop-shadow(1px 2px 0 rgb(140 103 45 / 25%))
+      drop-shadow(0 8px 5px rgb(140 103 45 / 28%));
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-
-  .service-card .service-top>svg,
-  .service-card:hover .service-top>svg {
+  .service-card .service-top > svg,
+  .service-card:hover .service-top > svg {
     transform: none;
     filter: none;
     transition: none;
@@ -2873,8 +2870,8 @@ details>p {
 }
 
 /* Approach cards: icon-only 3D hover */
-.approach-card>svg,
-.approach-card.photo-card>div>svg {
+.approach-card > svg,
+.approach-card.photo-card > div > svg {
   transform-box: fill-box;
   transform-origin: center;
   transform: perspective(400px) translateY(0) rotateX(0) rotateY(0) scale(1);
@@ -2885,20 +2882,17 @@ details>p {
 }
 
 @media (hover: hover) and (pointer: fine) {
-
-  .approach-card:hover>svg,
-  .approach-card.photo-card:hover>div>svg {
-    transform:
-      perspective(400px) translateY(-6px) rotateX(12deg) rotateY(-16deg) scale(1.35);
-    filter:
-      drop-shadow(1px 2px 0 rgb(140 103 45 / 25%)) drop-shadow(0 8px 5px rgb(140 103 45 / 28%));
+  .approach-card:hover > svg,
+  .approach-card.photo-card:hover > div > svg {
+    transform: perspective(400px) translateY(-6px) rotateX(12deg) rotateY(-16deg) scale(1.35);
+    filter: drop-shadow(1px 2px 0 rgb(140 103 45 / 25%))
+      drop-shadow(0 8px 5px rgb(140 103 45 / 28%));
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-
-  .approach-card>svg,
-  .approach-card.photo-card>div>svg {
+  .approach-card > svg,
+  .approach-card.photo-card > div > svg {
     transform: none;
     filter: none;
     transition: none;
@@ -2923,15 +2917,9 @@ header::after {
 /* Soft nebula clouds */
 header::before {
   background:
-    radial-gradient(ellipse at 15% 45%,
-      rgb(112 28 56 / 12%),
-      transparent 50%),
-    radial-gradient(ellipse at 80% 60%,
-      rgb(179 138 69 / 18%),
-      transparent 48%),
-    radial-gradient(ellipse at 55% 15%,
-      rgb(112 28 56 / 6%),
-      transparent 45%);
+    radial-gradient(ellipse at 15% 45%, rgb(112 28 56 / 12%), transparent 50%),
+    radial-gradient(ellipse at 80% 60%, rgb(179 138 69 / 18%), transparent 48%),
+    radial-gradient(ellipse at 55% 15%, rgb(112 28 56 / 6%), transparent 45%);
   background-size: 160% 200%;
   animation: header-nebula-drift 24s ease-in-out infinite alternate;
 }
@@ -2939,15 +2927,9 @@ header::before {
 /* Fine gold stars */
 header::after {
   background-image:
-    radial-gradient(circle,
-      rgb(179 138 69 / 65%) 0 1px,
-      transparent 1.8px),
-    radial-gradient(circle,
-      rgb(179 138 69 / 40%) 0 0.7px,
-      transparent 1.4px),
-    radial-gradient(circle,
-      rgb(112 28 56 / 25%) 0 0.6px,
-      transparent 1.2px);
+    radial-gradient(circle, rgb(179 138 69 / 65%) 0 1px, transparent 1.8px),
+    radial-gradient(circle, rgb(179 138 69 / 40%) 0 0.7px, transparent 1.4px),
+    radial-gradient(circle, rgb(112 28 56 / 25%) 0 0.6px, transparent 1.2px);
   background-size:
     211px 83px,
     137px 67px,
@@ -2986,7 +2968,6 @@ header::after {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   header::before,
   header::after {
     animation: none;

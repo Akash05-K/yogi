@@ -66,34 +66,15 @@ export function JourneySection() {
                   />
 
                   {/* Upright side petals */}
-                  <path
-                    d="M16 25C9 23 6 17 8 8c6 3 9 9 8 17Z"
-                    fill="#D4AF62"
-                    fillOpacity="0.18"
-                  />
-                  <path
-                    d="M16 25c7-2 10-8 8-17-6 3-9 9-8 17Z"
-                    fill="#D4AF62"
-                    fillOpacity="0.18"
-                  />
+                  <path d="M16 25C9 23 6 17 8 8c6 3 9 9 8 17Z" fill="#D4AF62" fillOpacity="0.18" />
+                  <path d="M16 25c7-2 10-8 8-17-6 3-9 9-8 17Z" fill="#D4AF62" fillOpacity="0.18" />
 
                   {/* Central petal */}
-                  <path
-                    d="M16 3c-7 7-7 15 0 22 7-7 7-15 0-22Z"
-                    fill="#D4AF62"
-                    fillOpacity="0.28"
-                  />
-                  <path
-                    d="M16 12v13"
-                    stroke="#C5A05B"
-                    strokeWidth="1"
-                  />
+                  <path d="M16 3c-7 7-7 15 0 22 7-7 7-15 0-22Z" fill="#D4AF62" fillOpacity="0.28" />
+                  <path d="M16 12v13" stroke="#C5A05B" strokeWidth="1" />
 
                   {/* Base */}
-                  <path
-                    d="M10 28c4 1.5 8 1.5 12 0"
-                    stroke="#C5A05B"
-                  />
+                  <path d="M10 28c4 1.5 8 1.5 12 0" stroke="#C5A05B" />
                 </svg>
               </span>
               <div>

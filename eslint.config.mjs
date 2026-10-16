@@ -11,10 +11,11 @@ const eslintConfig = defineConfig([
     '.next/**',
     'out/**',
     'build/**',
+    'scripts/build/**',
     'next-env.d.ts',
   ]),
   {
-    files: ['src/components/ui/**/*.{ts,tsx}', 'src/hooks/use-mobile.ts'],
+    files: ['src/components/ui/**/*.{ts,tsx}'],
     rules: {
       // These files are vendored verbatim from shadcn@4.17.0. Keep the
       // registry source intact while applying the stricter rules to Site code.

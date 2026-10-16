@@ -19,8 +19,7 @@ function todayInIndia() {
     day: '2-digit',
   }).formatToParts(new Date());
 
-  const part = (type: string) =>
-    parts.find((item) => item.type === type)?.value ?? '';
+  const part = (type: string) => parts.find((item) => item.type === type)?.value ?? '';
 
   return `${part('year')}-${part('month')}-${part('day')}`;
 }
@@ -42,9 +41,7 @@ export function useBooking() {
   const [result, setResult] = useState<WhatsAppRequest | null>(null);
   const [copied, setCopied] = useState(false);
 
-  const configured = /^[1-9]\d{7,14}$/.test(
-    ASTROLOGER_WHATSAPP_NUMBER,
-  );
+  const configured = /^[1-9]\d{7,14}$/.test(ASTROLOGER_WHATSAPP_NUMBER);
 
   useEffect(() => {
     const today = todayInIndia();
@@ -66,9 +63,7 @@ export function useBooking() {
     setStep(1);
     setError('');
 
-    const reducedMotion = window.matchMedia(
-      '(prefers-reduced-motion: reduce)',
-    ).matches;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     document.getElementById('booking')?.scrollIntoView({
       behavior: reducedMotion ? 'auto' : 'smooth',
@@ -109,9 +104,7 @@ export function useBooking() {
     });
 
     if (!parsed.success) {
-      setError(
-        'Please check your name, email, phone number and consultation preferences.',
-      );
+      setError('Please check your name, email, phone number and consultation preferences.');
       return;
     }
 

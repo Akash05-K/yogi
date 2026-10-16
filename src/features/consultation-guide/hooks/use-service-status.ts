@@ -1,8 +1,10 @@
 'use client';
-import type { ServiceStatus } from '@/features/booking/types';
 import { useEffect, useState } from 'react';
+export interface ServiceStatus {
+  ai: boolean;
+}
 export function useServiceStatus() {
-  const [status, setStatus] = useState<ServiceStatus>({ booking: false, ai: false });
+  const [status, setStatus] = useState<ServiceStatus>({ ai: false });
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     fetch('/api/status')

@@ -50,10 +50,7 @@ export function FaqSection() {
                       />
 
                       {/* Gold centre */}
-                      <path
-                        d="m16 11 5 5-5 5-5-5 5-5Z"
-                        fill="#C5A05B"
-                      />
+                      <path d="m16 11 5 5-5 5-5-5 5-5Z" fill="#C5A05B" />
                       <circle cx="16" cy="16" r="1.5" fill="#FFF2CC" />
                     </svg>
                   </small>

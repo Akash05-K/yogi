@@ -5,11 +5,7 @@ import { ArrowUpRight, ShieldCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import type { BookingController } from '../hooks/use-booking';
 
-export function BookingContactForm({
-  booking,
-}: {
-  booking: BookingController;
-}) {
+export function BookingContactForm({ booking }: { booking: BookingController }) {
   const {
     service,
     mode,
@@ -89,8 +85,7 @@ export function BookingContactForm({
       </div>
 
       <label>
-        What would you like to discuss?{' '}
-        <span className="optional">Optional</span>
+        What would you like to discuss? <span className="optional">Optional</span>
         <textarea
           rows={3}
           maxLength={1000}
@@ -101,8 +96,8 @@ export function BookingContactForm({
       </label>
 
       <p className="field-help">
-        Have your birth date, time and place ready for your consultation.
-        For compatibility, prepare both partners’ details.
+        Have your birth date, time and place ready for your consultation. For compatibility, prepare
+        both partners’ details.
       </p>
 
       <label className="consent">
@@ -113,15 +108,13 @@ export function BookingContactForm({
           onChange={(event) => setConsent(event.target.checked)}
         />
         <span>
-          I agree to share these details with the astrologer through WhatsApp
-          and be contacted about this request. My preferred date is subject
-          to availability.
+          I agree to share these details with the astrologer through WhatsApp and be contacted about
+          this request. My preferred date is subject to availability.
         </span>
       </label>
 
       <p className="field-help">
-        Review your request, then open WhatsApp and tap Send to share it
-        with the astrologer.
+        Review your request, then open WhatsApp and tap Send to share it with the astrologer.
       </p>
 
       {!configured && (
@@ -136,11 +129,7 @@ export function BookingContactForm({
         </p>
       )}
 
-      <Button
-        className="button full"
-        disabled={!configured}
-        type="submit"
-      >
+      <Button className="button full" disabled={!configured} type="submit">
         Review WhatsApp request
         <ArrowUpRight size={18} />
       </Button>

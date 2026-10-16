@@ -8,9 +8,7 @@ export function HeroSection() {
     <section className="hero-section" id="home">
       <div className="hero container">
         <Reveal className="hero-copy">
-          <div className="eyebrow">
-            ANCIENT WISDOM. A CLEARER TOMORROW.
-          </div>
+          <div className="eyebrow">ANCIENT WISDOM. A CLEARER TOMORROW.</div>
           <h1>
             Discover your
             <br />

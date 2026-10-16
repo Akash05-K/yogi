@@ -1,0 +1,8 @@
+{
+  // Static Worker settings. vite.config.ts supplies compatibility_flags and the
+  // optional D1/R2 bindings from .openai/hosting.json, and takes precedence.
+  // Do not repeat compatibility_flags here: the Cloudflare Vite plugin merges
+  // both configs and the Workers runtime rejects duplicated flags.
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "main": "./scripts/build/sites-worker.ts"
+}

@@ -1,6 +1,6 @@
 # Yogi Astro
 
-A responsive Vedic consultation website built with React, TypeScript, Next.js-compatible App Router source, Tailwind CSS 4, Motion, Supabase and Vercel AI SDK. The original Vinext/Cloudflare adapter and hosting integration are retained.
+A responsive Vedic consultation website built with React, TypeScript, Next.js-compatible App Router source, Tailwind CSS 4, Motion and Vercel AI SDK. The original Vinext/Cloudflare adapter and hosting integration are retained.
 
 ## Start locally
 
@@ -41,19 +41,16 @@ The website works in preview mode without credentials. To configure integrations
 
 The remaining content, class names, palette, responsive breakpoints, animations, API routes and request behavior are preserved. Emoji appearance depends on the operating system's emoji font.
 
-See [Architecture](docs/ARCHITECTURE.md) for folder responsibilities and [Verification](docs/VERIFICATION.md) for checks and limitations.
+See [Architecture](docs/ARCHITECTURE.md) for folder responsibilities.
 
 ## Booking and optional integrations
 
-Bookings are requests, not confirmed appointments. Without configuration, visitors can review and copy their details; nothing is submitted. With Supabase enabled, the server returns a reference only after a successful database write.
+Bookings are requests, not confirmed appointments. The booking form validates the visitor's details and opens WhatsApp with a pre-filled message to the number in `src/features/booking/config.ts`. Nothing is stored on the server.
 
-1. Run `supabase/schema.sql` in your own Supabase project.
-2. Set the Supabase server variables in `.env.example`. Enable `BOOKINGS_ENABLED` only when an operator can monitor and respond to requests. The existing code does not send notifications.
-3. For optional AI, set `AI_ENABLED`, `GOOGLE_GENERATIVE_AI_API_KEY` and `AI_MODEL`. AI calls retain the existing Sites identity requirement. Current AI throttling is in-memory per worker.
-4. Razorpay helpers remain inactive: there is no checkout, payment collection or booking confirmation flow.
+For optional AI, set `AI_ENABLED`, `GOOGLE_GENERATIVE_AI_API_KEY` and `AI_MODEL`. AI calls retain the existing Sites identity requirement. Current AI throttling is in-memory per worker.
 
-Fees, actual availability, contact details and business policies must be supplied separately. No admin dashboard or new authentication provider has been introduced. A deployment outside the existing hosting environment requires its own identity and hosting adaptation.
+Fees, actual availability and business policies must be supplied separately. No admin dashboard, database, payment flow or new authentication provider is included. A deployment outside the existing hosting environment requires its own identity and hosting adaptation.
 
 ## Source package
 
-The ZIP contains application source, public assets, environment example, configuration, dependency lockfile, database SQL, runtime adapters, tests and documentation. Generated dependencies, build output, caches and local credentials are excluded. Run `pnpm install --frozen-lockfile` after extraction.
+The ZIP contains application source, public assets, environment example, configuration, dependency lockfile, runtime adapters, tests and documentation. Generated dependencies, build output, caches and local credentials are excluded. Run `pnpm install --frozen-lockfile` after extraction.
