@@ -1,0 +1,1 @@
+export const ASTROLOGER_WHATSAPP_NUMBER: string = '919994693237';
